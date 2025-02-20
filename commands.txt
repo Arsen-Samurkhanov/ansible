@@ -1,0 +1,1 @@
+ansible all --key-file /home/arsen/Desktop/ansible-keys/ansible  -i inventory -m ping #check ssh connection
