@@ -1,3 +1,5 @@
 hello
 hello again
 hello 3
+
+sudo ansible all --key-file ./keys/ansible -i inventory -m ping

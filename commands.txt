@@ -1,1 +1,9 @@
 ansible all --key-file /home/arsen/Desktop/ansible-keys/ansible  -i inventory -m ping #check ssh connection
+
+sudo ansible all --key-file ./keys/ansible -i inventory -m ping
+
+sudo ansible all -m ping
+
+sudo ansible all -m gather_facts
+
+ansible all -m gather_facts --limit 192.168.28.11
