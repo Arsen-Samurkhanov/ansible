@@ -7,3 +7,7 @@ sudo ansible all -m ping
 sudo ansible all -m gather_facts
 
 ansible all -m gather_facts --limit 192.168.28.11
+
+sudo ansible all -m apt -a update_cache=true --become --ask-become-pass   # = sudo apt update
+
+sudo ansible all -m apt -a name=vim-nox --become --ask-become-pass
